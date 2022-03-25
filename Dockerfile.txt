@@ -1,0 +1,5 @@
+FROM anapsix/alpine-java
+MAINTAINER mahendra
+COPY sample.jar /home/sample.jar
+EXPOSE 8080
+CMD ["java","-jar","/home/sample.jar"]
